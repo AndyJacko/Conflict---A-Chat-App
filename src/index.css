@@ -54,19 +54,19 @@ p {
 }
 
 #server-list {
-  width: 72px;
+  width: 86px;
 }
 
 #friend-chats,
 #server-channels,
 #members-list {
-  width: 240px;
+  width: 288px;
   background: var(--channelbackground);
 }
 
 #friend-chats,
 #server-channels {
-  border-top-left-radius: 10px;
+  border-top-left-radius: 8px;
 }
 
 #friend-chats {

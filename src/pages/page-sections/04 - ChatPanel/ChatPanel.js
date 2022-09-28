@@ -26,7 +26,7 @@ const ChatPanel = () => {
           <div className="h-100 overflow-hidden">
             <div className="h-100 d-flex flex-column justify-content-end">
               {DUMMY_CHATS.map((chat) => {
-                return <ChatItem id={chat.id} time={chat.time} user={chat.user} chat={chat.chat} />
+                return <ChatItem key={chat.id} id={chat.id} time={chat.time} user={chat.user} chat={chat.chat} />
               })}
               
             </div>
