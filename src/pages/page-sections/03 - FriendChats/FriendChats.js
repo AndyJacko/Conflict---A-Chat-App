@@ -29,7 +29,12 @@ const FriendChats = () => {
 
           {DUMMY_FRIENDS.map((friend) => {
             return (
-              <MemberItem id={friend.id} name={friend.name} img={friend.img} />
+              <MemberItem
+                key={friend.id}
+                id={friend.id}
+                name={friend.name}
+                img={friend.img}
+              />
             );
           })}
         </div>
