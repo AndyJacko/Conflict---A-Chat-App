@@ -61,6 +61,12 @@ body {
   border-top-left-radius: 10px;
 }
 
+#friend-chats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #chat-panel {
   width: 100%;
   background: var(--chatbackground);
