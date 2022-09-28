@@ -7,20 +7,61 @@
   --darkgreen: #193f10;
   --red: #ff6868;
   --yellow: #fdf46c;
-  --background: #333333;
+  --background: #202225;
+  --channelbackground: #2f3136;
+  --chatbackground: #36393f;
   --shadow: #666666;
+  --text: #a3a6aa;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  /* border: 1px solid white; */
 }
 
 body {
   height: 100vh;
   width: 100vw;
   font-family: "Outfit", sans-serif;
-  color: var(--white);
+  color: var(--text);
   background-color: var(--background);
+}
+
+#page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-header {
+  height: 22px;
+}
+
+#content-container {
+  height: 100%;
+  display: flex;
+}
+
+#server-list {
+  width: 72px;
+}
+
+#friend-chats,
+#server-channels,
+#members-list {
+  width: 240px;
+  background: var(--channelbackground);
+}
+
+#friend-chats,
+#server-channels {
+  border-top-left-radius: 10px;
+}
+
+#chat-panel {
+  width: 100%;
+  background: var(--chatbackground);
 }
