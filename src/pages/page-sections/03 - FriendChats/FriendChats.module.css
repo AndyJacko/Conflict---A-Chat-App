@@ -1,9 +1,8 @@
 .friendsheader {
-  padding: 10px;
+  padding: 10px 0 14px 16px;
   border-bottom: 1px solid var(--background);
 }
 
 .friendslist {
   padding: 10px;
 }
-
