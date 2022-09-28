@@ -1,0 +1,23 @@
+.brandname {
+  padding-left: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.icon {
+  height: 22px;
+  width: 28px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  color: #b9bbbe;
+}
+
+.minfull:hover {
+  background: #444444;
+}
+
+.close:hover {
+  background: #ed4245;
+}
