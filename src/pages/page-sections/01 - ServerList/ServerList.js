@@ -14,9 +14,9 @@ const ServerList = () => {
     <div className="d-flex flex-column">
       {DUMMY_SERVERS.map((server) => {
         if (server.type === 1) {
-          return <p>home</p>;
+          return <p key={server.id}>home</p>;
         } else {
-          return <p>server</p>;
+          return <p key={server.id}>server</p>;
         }
       })}
     </div>

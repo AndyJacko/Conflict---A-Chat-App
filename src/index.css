@@ -18,8 +18,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  /* border: 1px solid white; */
 }
 
 body {
@@ -28,6 +26,15 @@ body {
   font-family: "Outfit", sans-serif;
   color: var(--text);
   background-color: var(--background);
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.b1 {
+  border: 1px solid white;
 }
 
 #page-container {
@@ -43,6 +50,7 @@ body {
 #content-container {
   height: 100%;
   display: flex;
+  overflow: hidden;
 }
 
 #server-list {
