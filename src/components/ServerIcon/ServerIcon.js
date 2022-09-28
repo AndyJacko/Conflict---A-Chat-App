@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 
-const ServerIcon = () => {
-  return <div>ServerIcon</div>;
+import PageContext from "../../store/pageContext";
+
+import styles from "./ServerIcon.module.css";
+
+const ServerIcon = ({ id, img, name, type }) => {
+  const pageCtx = useContext(PageContext);
+
+  const onPageChange = () => {
+    pageCtx.onPageChange(id, type);
+  };
+
+  return (
+    <div className={styles.icon} onClick={onPageChange}>
+      <img src={`images/${img}`} alt={name} />
+    </div>
+  );
 };
 
 export default ServerIcon;

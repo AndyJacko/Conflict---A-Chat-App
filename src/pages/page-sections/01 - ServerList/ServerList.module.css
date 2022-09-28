@@ -1,0 +1,6 @@
+.homespacer {
+  width: 30px;
+  height: 2px;
+  margin: 8px auto;
+  background: var(--chatbackground);
+}
