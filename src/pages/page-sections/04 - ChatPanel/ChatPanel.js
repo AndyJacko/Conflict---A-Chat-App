@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./ChatsPanel.module.css";
-
 import ChatItem from "../../../components/ChatItem/ChatItem";
+
+import styles from "./ChatsPanel.module.css";
 
 const DUMMY_CHATS = [
   { id: 1, time: "14:02", user: "DarthVader", chat: "You should see my new Tie-Fighter" },
