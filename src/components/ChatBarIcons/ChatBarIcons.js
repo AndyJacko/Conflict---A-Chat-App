@@ -1,6 +1,6 @@
 import React from "react";
 
-import Input from "../Input/Input";
+import Input from "../UI/Input/Input";
 
 import styles from "./ChatBarIcons.module.css";
 

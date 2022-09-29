@@ -1,8 +1,9 @@
 import React from "react";
 
 import ChatItem from "../../../components/ChatItem/ChatItem";
-import ChatBarIcons from "../../../components/UI/ChatBarIcons/ChatBarIcons";
+import ChatBarIcons from "../../../components/ChatBarIcons/ChatBarIcons";
 import MessageInput from "../../../components/MessageInput/MessageInput";
+import FriendProfile from "../../../components/FriendProfile/FriendProfile";
 
 import styles from "./ChatsPanel.module.css";
 
@@ -42,6 +43,8 @@ const ChatPanel = () => {
         <div className="h-100 d-flex flex-column overflow-hidden">
           <div className="h-100 overflow-hidden">
             <div className="h-100 d-flex flex-column justify-content-end">
+              <FriendProfile name="DarthVader" img="darthvader.png" />
+
               {DUMMY_CHATS.map((chat) => {
                 return (
                   <ChatItem

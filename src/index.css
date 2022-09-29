@@ -16,6 +16,10 @@
   --selectedbg: #42464d;
   --chatselbg: #32353b;
   --msginput: #40444b;
+  --btnbgred: #d83c3e;
+  --btnbggray: #4f545c;
+  --btnbgblue: #5865f2;
+
 }
 
 * {

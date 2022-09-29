@@ -1,7 +1,7 @@
 import React from "react";
 
 import ChatItem from "../../../components/ChatItem/ChatItem";
-import ChatBarIcons from "../../../components/UI/ChatBarIcons/ChatBarIcons";
+import ChatBarIcons from "../../../components/ChatBarIcons/ChatBarIcons";
 import MessageInput from "../../../components/MessageInput/MessageInput";
 
 import styles from "./ServerChat.module.css";

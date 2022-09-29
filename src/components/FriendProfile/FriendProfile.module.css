@@ -1,0 +1,66 @@
+.friendprofile {
+  margin-bottom: 20px;
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--profileboxbg);
+}
+
+.friendprofile img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.name {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.beginning {
+  font-size: 14px;
+}
+
+.server img {
+  width: 25px;
+  height: 25px;
+  margin: 10px 0;
+  border-radius: 50%;
+}
+
+.server {
+  display: flex;
+  align-items: center;
+}
+
+.mutual {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.mutual:hover {
+  color: var(--white);
+}
+
+.button {
+  margin: 0 4px;
+  padding: 4px 14px;
+  color: var(--white);
+  font-size: 12px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.addfriend {
+  background: var(--btnbgblue);
+}
+
+.block {
+  background: var(--btnbggray);
+}
+
+.spam {
+  background: var(--btnbgred);
+}
