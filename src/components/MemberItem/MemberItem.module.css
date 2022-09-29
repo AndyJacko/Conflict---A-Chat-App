@@ -1,0 +1,25 @@
+.memberitem {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.memberitem:hover {
+  color: var(--white);
+  background: var(--profileboxbg);
+}
+
+.memberitem img {
+  height: 32px;
+  width: 32px;
+  margin: 3px 10px;
+  border-radius: 50%;
+}
+
+.selected {
+  color: var(--white);
+  background: var(--selectedbg);
+}
