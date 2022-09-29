@@ -1,8 +1,24 @@
 .friendsheader {
-  padding: 10px 0 14px 16px;
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--background);
 }
 
 .friendslist {
   padding: 10px;
+}
+
+.dms,
+.newchat {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.dms:hover,
+.newchat:hover {
+  color: var(--white);
 }

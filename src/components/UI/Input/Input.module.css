@@ -1,0 +1,18 @@
+.friendchats {
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  background: var(--background);
+  border: none;
+  border-radius: 3px;
+  color: var(--text);
+}
+
+.friendchats:focus {
+  outline: none;
+}
+
+.friendchats::placeholder {
+  color: var(--text);
+}
