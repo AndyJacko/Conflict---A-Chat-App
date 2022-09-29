@@ -1,7 +1,19 @@
 .chatsheader {
-  padding: 10px 10px 14px 10px;
+  min-width: 300px;
+  padding: 8px 10px 11px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--background);
+}
+
+.aticon {
+  margin: 0 10px 0 4px;
+  font-size: 20px;
+}
+
+.friendname {
+  min-width: 125px;
+  color: var(--white);
+  font-weight: bold;
 }

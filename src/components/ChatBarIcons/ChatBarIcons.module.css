@@ -1,0 +1,13 @@
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: var(--white);
+}

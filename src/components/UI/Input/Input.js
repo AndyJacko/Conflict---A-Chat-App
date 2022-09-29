@@ -10,7 +10,10 @@ const Input = ({ ph, st }) => {
       inptstyle = styles.friendchats;
       break;
     case "messagebox":
-      inptstyle = styles.friendchats;
+      inptstyle = styles.messagebox;
+      break;
+    case "search":
+      inptstyle = styles.search;
       break;
     default:
       break;

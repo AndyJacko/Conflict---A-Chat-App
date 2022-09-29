@@ -1,0 +1,19 @@
+.chatitem {
+  padding: 2px 10px 2px 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+.chatitem:hover {
+  background: var(--chatselbg);
+}
+
+.time {
+  font-size: 10px;
+}
+
+.user {
+  margin: 0 8px 0 4px;
+  font-size: 14px;
+  color: var(--white);
+}

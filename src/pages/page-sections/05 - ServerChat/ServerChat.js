@@ -1,6 +1,8 @@
 import React from "react";
 
 import ChatItem from "../../../components/ChatItem/ChatItem";
+import ChatBarIcons from "../../../components/UI/ChatBarIcons/ChatBarIcons";
+import MessageInput from "../../../components/MessageInput/MessageInput";
 
 import styles from "./ServerChat.module.css";
 
@@ -28,8 +30,13 @@ const ServerChat = () => {
     <>
       <div className="h-100 d-flex flex-column overflow-hidden">
         <div className={styles.chatsheader}>
-          <div>@ friendname</div>
-          <div>Icons</div>
+          <div className="d-flex align-items-center">
+            <div className={styles.hashicon}>
+              <i className="fa-solid fa-hashtag"></i>
+            </div>
+            <div className={styles.channelname}>Welcome</div>
+          </div>
+          <ChatBarIcons />
         </div>
 
         <div className="h-100 d-flex">
@@ -41,7 +48,6 @@ const ServerChat = () => {
                     return (
                       <ChatItem
                         key={chat.id}
-                        id={chat.id}
                         time={chat.time}
                         user={chat.user}
                         chat={chat.chat}
@@ -51,7 +57,7 @@ const ServerChat = () => {
                 </div>
               </div>
 
-              <div>MessageBox</div>
+              <MessageInput />
             </div>
           </div>
 
