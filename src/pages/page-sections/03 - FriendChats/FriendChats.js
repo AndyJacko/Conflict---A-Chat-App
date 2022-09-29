@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "./FriendChats.module.css";
-
 import MemberItem from "../../../components/MemberItem/MemberItem";
 import ProfileBox from "../../../components/ProfileBox/ProfileBox";
+
+import styles from "./FriendChats.module.css";
 
 const DUMMY_FRIENDS = [
   { id: 1, name: "Darth Vader", img: "" },

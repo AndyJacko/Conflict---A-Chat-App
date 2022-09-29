@@ -1,0 +1,16 @@
+.channelitem {
+  padding: 14px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.channelitem:hover {
+  color: var(--white);
+}
+
+.channelitem i {
+  font-size: 8px;
+  margin-right: 5px;
+}

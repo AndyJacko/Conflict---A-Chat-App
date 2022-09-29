@@ -1,0 +1,10 @@
+.serverheader {
+  padding: 10px 20px 14px 16px;
+  color: var(--white);
+  border-bottom: 1px solid var(--background);
+  cursor: pointer;
+}
+
+.serverheader i {
+  color: var(--text);
+}
