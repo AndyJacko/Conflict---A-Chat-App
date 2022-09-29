@@ -13,7 +13,7 @@ const ServerIcon = ({ id, img, name, type }) => {
 
   return (
     <div className={styles.icon} onClick={onPageChange}>
-      <img src={`images/${img}`} alt={name} />
+      <img src={`images/servericons/${img}`} alt={name} />
     </div>
   );
 };
