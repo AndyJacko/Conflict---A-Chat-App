@@ -75,7 +75,8 @@ const MembersList = () => {
                       status={member.status}
                     />
                   );
-                }
+                } 
+                return null;
               })}
             </div>
           </div>

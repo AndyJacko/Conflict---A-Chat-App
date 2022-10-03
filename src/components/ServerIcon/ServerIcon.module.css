@@ -1,13 +1,14 @@
 .icon {
   width: 50px;
   height: 50px;
-  margin: 2px 0;
+  margin: 5px 0;
   overflow: hidden;
   border-radius: 50%;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-.icon:hover {
+.icon:hover,
+.selected {
   border-radius: 25%;
 }

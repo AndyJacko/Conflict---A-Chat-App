@@ -12,7 +12,12 @@ const ServerIcon = ({ id, img, name, type }) => {
   };
 
   return (
-    <div className={styles.icon} onClick={onPageChange}>
+    <div
+      className={`${styles.icon} ${
+        pageCtx.activeServer === id ? styles.selected : null
+      }`}
+      onClick={onPageChange}
+    >
       <img src={`images/servericons/${img}`} alt={name} />
     </div>
   );
