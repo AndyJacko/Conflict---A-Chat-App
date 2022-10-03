@@ -1,5 +1,6 @@
 .memberitem {
   height: 42px;
+  padding-left: 3px;
   display: flex;
   align-items: center;
   border-radius: 3px;
@@ -15,11 +16,15 @@
 .memberitem img {
   height: 32px;
   width: 32px;
-  margin: 3px 10px;
   border-radius: 50%;
+}
+
+.name {
+  padding-left: 10px;
 }
 
 .selected {
   color: var(--white);
   background: var(--selectedbg);
+  z-index: 200;
 }
