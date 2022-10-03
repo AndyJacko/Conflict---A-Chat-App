@@ -30,7 +30,7 @@ const ImageIcon = ({ img, name, sel, status }) => {
       {}
       <div className={`${styles.status} ${sel ? styles.selected : null}`}>
         {statusIcon}
-      </div>      
+      </div>
     </div>
   );
 };

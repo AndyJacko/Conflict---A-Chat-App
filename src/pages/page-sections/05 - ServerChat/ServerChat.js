@@ -3,6 +3,7 @@ import React from "react";
 import ChatItem from "../../../components/ChatItem/ChatItem";
 import ChatBarIcons from "../../../components/ChatBarIcons/ChatBarIcons";
 import MessageInput from "../../../components/MessageInput/MessageInput";
+import MembersList from "../06 - MembersList/MembersList";
 
 import styles from "./ServerChat.module.css";
 
@@ -61,7 +62,9 @@ const ServerChat = () => {
             </div>
           </div>
 
-          <div id="members-list">MemberList</div>
+          <div id="members-list">
+            <MembersList />
+          </div>
         </div>
       </div>
     </>
