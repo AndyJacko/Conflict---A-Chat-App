@@ -27,10 +27,11 @@ const ImageIcon = ({ img, name, sel, status }) => {
   return (
     <div className={styles.imageicon}>
       <img src={img} alt={name} />
-      {}
-      <div className={`${styles.status} ${sel ? styles.selected : null}`}>
-        {statusIcon}
-      </div>
+      {status && (
+        <div className={`${styles.status} ${sel ? styles.selected : null}`}>
+          {statusIcon}
+        </div>
+      )}
     </div>
   );
 };
