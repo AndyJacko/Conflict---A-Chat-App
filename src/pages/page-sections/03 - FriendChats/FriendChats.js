@@ -1,37 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 
+import PageContext from "../../../store/pageContext";
 import MemberItem from "../../../components/MemberItem/MemberItem";
 import ProfileBox from "../../../components/ProfileBox/ProfileBox";
 import Input from "../../../components/UI/Input/Input";
 
 import styles from "./FriendChats.module.css";
 
-const DUMMY_FRIENDS = [
-  {
-    id: 1,
-    name: "Darth Vader",
-    img: "darthvader.png",
-    sel: true,
-    status: "online",
-  },
-  {
-    id: 2,
-    name: "Green Goblin",
-    img: "greengoblin.png",
-    sel: false,
-    status: "idle",
-  },
-  { id: 3, name: "Kingpin", img: "kingpin.png", sel: false, status: "dnd" },
-  {
-    id: 4,
-    name: "Lex Luthor",
-    img: "lexluthor.png",
-    sel: false,
-    status: "offline",
-  },
-];
-
 const FriendChats = () => {
+  const pageCtx = useContext(PageContext);
+
   return (
     <>
       <div>
@@ -50,10 +28,11 @@ const FriendChats = () => {
             </div>
           </div>
 
-          {DUMMY_FRIENDS.map((friend) => {
+          {pageCtx.data.friends.map((friend) => {
             return (
               <MemberItem
                 key={friend.id}
+                id={friend.id}
                 name={friend.name}
                 img={friend.img}
                 sel={friend.sel}

@@ -273,23 +273,49 @@ const DUMMY_DATA = {
     },
   ],
 };
+
 const PageContext = React.createContext({
   activePageType: 1,
   activeServer: 1,
   data: DUMMY_DATA,
   onPageChange: () => {},
+  onFriendChange: () => {},
 });
 
 export const PageContextProvider = ({ children }) => {
   const [activePageType, setActivePageType] = useState(1);
   const [activeServer, setActiveServer] = useState(1);
-  const data = DUMMY_DATA;
-  // const [data, setData] = useState(DUMMY_DATA);
+  const [data, setData] = useState(DUMMY_DATA);
 
   const onPageChange = (id, type) => {
     if (id && type) {
       setActivePageType(type);
       setActiveServer(id);
+    }
+  };
+
+  const onFriendChange = (id) => {
+    if (id) {
+      const servers = JSON.parse(JSON.stringify(data.servers));
+      const friends = JSON.parse(JSON.stringify(data.friends));
+
+      const newFriends = friends.map((friend) => {
+        const newFriend = { ...friend };
+        const messages = friend.messages;
+
+        newFriend.sel = false;
+
+        if (friend.id === id) {
+          newFriend.messages = messages;
+          newFriend.sel = true;
+        }
+
+        return newFriend;
+      });
+
+      const newData = { servers, friends: newFriends };
+
+      setData(newData);
     }
   };
 
@@ -300,6 +326,7 @@ export const PageContextProvider = ({ children }) => {
         activeServer: activeServer,
         data: data,
         onPageChange: onPageChange,
+        onFriendChange: onFriendChange,
       }}
     >
       {children}

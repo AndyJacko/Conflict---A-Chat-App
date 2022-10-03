@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 
+import PageContext from "../../store/pageContext";
 import ImageIcon from "../UI/ImageIcon/ImageIcon";
 
 import styles from "./MemberItem.module.css";
 
-const MemberItem = ({ img, name, sel, status }) => {
+const MemberItem = ({ id, img, name, sel, status }) => {
+  const pageCtx = useContext(PageContext);
+
+  const onFriendChange = () => {
+    pageCtx.onFriendChange(id);
+  };
+
   return (
-    <div className={`${styles.memberitem} ${sel ? styles.selected : null}`}>
+    <div
+      className={`${styles.memberitem} ${sel ? styles.selected : null}`}
+      onClick={onFriendChange}
+    >
       <div>
         <ImageIcon
           img={`images/profileicons/${img}`}
