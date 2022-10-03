@@ -28,6 +28,7 @@
 
 .idle {
   color: var(--orange);
+  transform: scaleX(-1);
 }
 
 .dnd {
