@@ -1,0 +1,28 @@
+.serverprofile {
+  margin-bottom: 20px;
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--profileboxbg);
+}
+
+.serverprofile i {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--profileboxbg);
+}
+
+.name {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.beginning {
+  font-size: 14px;
+}

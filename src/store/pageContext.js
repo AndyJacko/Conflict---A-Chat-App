@@ -11,30 +11,63 @@ const DUMMY_DATA = {
         {
           id: 1,
           title: "Welcome",
+          sel: false,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "Announcements",
+              sel: false,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Welcome to the server, I will post any important stuff here.",
+                },
+              ],
+            },
+            {
+              id: 2,
+              title: "Introduce Yourself",
+              sel: true,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Hi I'm Darth Vader.",
+                },
+              ],
+            },
           ],
         },
         {
           id: 2,
-          title: "Channel 1",
+          title: "Fallout: London",
+          sel: true,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
-          ],
-        },
-        {
-          id: 3,
-          title: "Channel 2",
-          subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "Coming Soon",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "Known Bugs",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "Request A Feature",
+              sel: false,
+              messages: [],
+            },
           ],
         },
       ],
       members: [],
-      messages: [],
     },
     {
       id: 3,
@@ -45,30 +78,63 @@ const DUMMY_DATA = {
         {
           id: 1,
           title: "Welcome",
+          sel: false,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "Announcements",
+              sel: false,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Welcome to the server, I will post any important stuff here.",
+                },
+              ],
+            },
+            {
+              id: 2,
+              title: "Introduce Yourself",
+              sel: true,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Hi I'm Darth Vader.",
+                },
+              ],
+            },
           ],
         },
         {
           id: 2,
-          title: "Channel 1",
+          title: "DitchDown 44",
+          sel: true,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
-          ],
-        },
-        {
-          id: 3,
-          title: "Channel 2",
-          subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "Member Chat",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "YoYo Chat",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "Tattoo chat",
+              sel: false,
+              messages: [],
+            },
           ],
         },
       ],
       members: [],
-      messages: [],
     },
     {
       id: 4,
@@ -79,30 +145,63 @@ const DUMMY_DATA = {
         {
           id: 1,
           title: "Welcome",
+          sel: false,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "Announcements",
+              sel: false,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Welcome to the server, I will post any important stuff here.",
+                },
+              ],
+            },
+            {
+              id: 2,
+              title: "Introduce Yourself",
+              sel: true,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Hi I'm Darth Vader.",
+                },
+              ],
+            },
           ],
         },
         {
           id: 2,
-          title: "Channel 1",
+          title: "UK Throwers",
+          sel: true,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
-          ],
-        },
-        {
-          id: 3,
-          title: "Channel 2",
-          subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "BST",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "YoYo Chat",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "YoYo Stores",
+              sel: false,
+              messages: [],
+            },
           ],
         },
       ],
       members: [],
-      messages: [],
     },
     {
       id: 5,
@@ -113,30 +212,63 @@ const DUMMY_DATA = {
         {
           id: 1,
           title: "Welcome",
+          sel: false,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "Announcements",
+              sel: false,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Welcome to the server, I will post any important stuff here.",
+                },
+              ],
+            },
+            {
+              id: 2,
+              title: "Introduce Yourself",
+              sel: true,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Hi I'm Darth Vader.",
+                },
+              ],
+            },
           ],
         },
         {
           id: 2,
-          title: "Channel 1",
+          title: "Throw Smoke",
+          sel: true,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
-          ],
-        },
-        {
-          id: 3,
-          title: "Channel 2",
-          subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "YoYo Stuff",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "Weed Stuff",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "Rigs & Equipment",
+              sel: false,
+              messages: [],
+            },
           ],
         },
       ],
       members: [],
-      messages: [],
     },
     {
       id: 6,
@@ -147,30 +279,50 @@ const DUMMY_DATA = {
         {
           id: 1,
           title: "Welcome",
+          sel: true,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "welcome-to-code-nation",
+              sel: true,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Welcome to the server, I will post any important stuff here.",
+                },
+              ],
+            },
           ],
         },
         {
           id: 2,
-          title: "Channel 1",
+          title: "Resources",
+          sel: false,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
-          ],
-        },
-        {
-          id: 3,
-          title: "Channel 2",
-          subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "class-schedule",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "lecture-resources",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "work-submission",
+              sel: false,
+              messages: [],
+            },
           ],
         },
       ],
       members: [],
-      messages: [],
     },
     {
       id: 7,
@@ -180,31 +332,51 @@ const DUMMY_DATA = {
       channels: [
         {
           id: 1,
-          title: "Welcome",
+          title: "Session Info",
+          sel: true,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "welcome",
+              sel: true,
+              messages: [
+                {
+                  id: 1,
+                  time: "14:02",
+                  user: "DarthVader",
+                  chat: "Welcome to the server, I will post any important stuff here.",
+                },
+              ],
+            },
           ],
         },
         {
           id: 2,
-          title: "Channel 1",
+          title: "Session",
+          sel: false,
           subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
-          ],
-        },
-        {
-          id: 3,
-          title: "Channel 2",
-          subs: [
-            { id: 1, title: "Announcements" },
-            { id: 2, title: "Introduce Yourself" },
+            {
+              id: 1,
+              title: "chat",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "clips-and-pics",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "videos",
+              sel: false,
+              messages: [],
+            },
           ],
         },
       ],
       members: [],
-      messages: [],
     },
   ],
   friends: [
@@ -245,8 +417,30 @@ const DUMMY_DATA = {
       sel: false,
       status: "idle",
       messages: [
-        { id: 1, time: "14:02", user: "Green Goblin", chat: "message" },
-        { id: 2, time: "14:02", user: "AndyJacko", chat: "message" },
+        {
+          id: 1,
+          time: "08:02",
+          user: "Green Goblin",
+          chat: "Spiderman is such a dick",
+        },
+        {
+          id: 2,
+          time: "08:03",
+          user: "AndyJacko",
+          chat: "Wot has he done now?",
+        },
+        {
+          id: 3,
+          time: "08:07",
+          user: "Green Goblin",
+          chat: "Webbed up half my mansion",
+        },
+        {
+          id: 4,
+          time: "08:07",
+          user: "Green Goblin",
+          chat: "Gonna take ages to clean all this shit off the walls :(",
+        },
       ],
     },
     {
@@ -256,8 +450,30 @@ const DUMMY_DATA = {
       sel: false,
       status: "dnd",
       messages: [
-        { id: 1, time: "14:02", user: "Kingpin", chat: "message" },
-        { id: 2, time: "14:02", user: "AndyJacko", chat: "message" },
+        {
+          id: 1,
+          time: "10:00",
+          user: "Kingpin",
+          chat: "You should be my sidekick mate",
+        },
+        {
+          id: 2,
+          time: "10:02",
+          user: "AndyJacko",
+          chat: "Na mate...you literally stole my bald and mean look I had going on...",
+        },
+        {
+          id: 3,
+          time: "10:05",
+          user: "Kingpin",
+          chat: "Hahaha I look better in a suit tho",
+        },
+        {
+          id: 4,
+          time: "10:19",
+          user: "AndyJacko",
+          chat: "I have never even owned a suit...",
+        },
       ],
     },
     {
@@ -267,8 +483,31 @@ const DUMMY_DATA = {
       sel: false,
       status: "offline",
       messages: [
-        { id: 1, time: "14:02", user: "Lex Luthor", chat: "message" },
-        { id: 2, time: "14:02", user: "AndyJacko", chat: "message" },
+        {
+          id: 1,
+          time: "19:47",
+          user: "Lex Luthor",
+          chat: "You still got that kryptonite bro?",
+        },
+        {
+          id: 2,
+          time: "19:47",
+          user: "AndyJacko",
+          chat: "Ye mate...tryin to piss Superman off again?",
+        },
+        {
+          id: 3,
+          time: "19:48",
+          user: "Lex Luthor",
+          chat: "All day, every day bro.",
+        },
+        {
+          id: 4,
+          time: "19:52",
+          user: "AndyJacko",
+          chat: "No worries...I will sort it out n drop it off later...",
+        },
+        { id: 5, time: "19:53", user: "Lex Luthor", chat: "Buzzin. Nice one." },
       ],
     },
   ],
@@ -280,6 +519,7 @@ const PageContext = React.createContext({
   data: DUMMY_DATA,
   onPageChange: () => {},
   onFriendChange: () => {},
+  onChatSubmit: () => {},
 });
 
 export const PageContextProvider = ({ children }) => {
@@ -319,6 +559,110 @@ export const PageContextProvider = ({ children }) => {
     }
   };
 
+  const onChatSubmit = (chat, id, type) => {
+    if (chat && id && type) {
+      if (type === "friend") {
+        const servers = JSON.parse(JSON.stringify(data.servers));
+        const friends = JSON.parse(JSON.stringify(data.friends));
+
+        const newFriends = friends.map((friend) => {
+          const newFriend = { ...friend };
+
+          const now = new Date();
+          const time = now.getHours() + ":" + now.getMinutes();
+
+          if (friend.id === id) {
+            const messages = friend.messages;
+            messages.push({
+              id: friend.messages.length + 1,
+              time: time,
+              user: "AndyJacko",
+              chat: chat,
+            });
+
+            newFriend.messages = messages;
+          }
+
+          return newFriend;
+        });
+
+        const newData = { servers, friends: newFriends };
+
+        setData(newData);
+      } else {
+        const servers = JSON.parse(JSON.stringify(data.servers));
+        const friends = JSON.parse(JSON.stringify(data.friends));
+
+        const newServers = servers.map((server) => {
+          const newServer = { ...server };
+
+          const now = new Date();
+          const time = now.getHours() + ":" + now.getMinutes();
+
+          if (server.id === activeServer) {
+            const channels = [...server.channels];
+            const selChannel = channels.filter((channel) => {
+              if (channel.sel === true) {
+                return channel;
+              }
+              return null;
+            });
+
+            const selChannelSubs = [...selChannel[0].subs];
+            const selSub = selChannelSubs.filter((sub) => {
+              if (sub.sel === true) {
+                return sub;
+              }
+              return null;
+            });
+
+            const selSubMessages = [...selSub[0].messages];
+            selSubMessages.push({
+              id: selSubMessages.length + 1,
+              time: time,
+              user: "AndyJacko",
+              chat: chat,
+            });
+
+            const newSub = { ...selSub[0], messages: selSubMessages };
+            const newChannelSubs = selChannelSubs.map((sub) => {
+              if (sub.sel === true) {
+                return newSub;
+              }
+              return sub;
+            });
+
+            const newSelChannelSubs = {
+              ...selChannel[0],
+              subs: newChannelSubs,
+            };
+            const newChannel = selChannel.map((channel) => {
+              if (channel.sel === true) {
+                return newSelChannelSubs;
+              }
+              return channel;
+            });
+
+            const newChannels = channels.map((channel) => {
+              if (channel.title === newChannel[0].title) {
+                return newChannel[0];
+              }
+              return channel;
+            });
+
+            newServer.channels = newChannels;
+          }
+
+          return newServer;
+        });
+
+        const newData = { servers: newServers, friends };
+
+        setData(newData);
+      }
+    }
+  };
+
   return (
     <PageContext.Provider
       value={{
@@ -327,6 +671,7 @@ export const PageContextProvider = ({ children }) => {
         data: data,
         onPageChange: onPageChange,
         onFriendChange: onFriendChange,
+        onChatSubmit: onChatSubmit,
       }}
     >
       {children}
