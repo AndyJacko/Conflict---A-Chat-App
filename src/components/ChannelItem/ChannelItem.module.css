@@ -1,16 +1,45 @@
 .channelitem {
+  width: 100%;
   padding: 14px 6px;
+}
+
+.channel {
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.channelitem:hover {
+.channel:hover {
   color: var(--white);
 }
 
 .channelitem i {
+  height: 8px;
+  width: 8px;
   font-size: 8px;
   margin-right: 5px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.sub:hover {
+  background: var(--selectedbg);
+}
+
+.sub i {
+  margin-right: 20px;
+  font-size: 20px;
 }

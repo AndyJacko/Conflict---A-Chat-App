@@ -15,7 +15,7 @@ const DUMMY_DATA = {
           subs: [
             {
               id: 1,
-              title: "Announcements",
+              title: "announcements",
               sel: false,
               messages: [
                 {
@@ -28,7 +28,7 @@ const DUMMY_DATA = {
             },
             {
               id: 2,
-              title: "Introduce Yourself",
+              title: "Introduce-Yourself",
               sel: true,
               messages: [
                 {
@@ -48,19 +48,19 @@ const DUMMY_DATA = {
           subs: [
             {
               id: 1,
-              title: "Coming Soon",
+              title: "Coming-Soon",
               sel: false,
               messages: [],
             },
             {
               id: 2,
-              title: "Known Bugs",
+              title: "Known-Bugs",
               sel: true,
               messages: [],
             },
             {
               id: 3,
-              title: "Request A Feature",
+              title: "Request-A-Feature",
               sel: false,
               messages: [],
             },
@@ -95,7 +95,7 @@ const DUMMY_DATA = {
             },
             {
               id: 2,
-              title: "Introduce Yourself",
+              title: "Introduce-Yourself",
               sel: true,
               messages: [
                 {
@@ -115,19 +115,19 @@ const DUMMY_DATA = {
           subs: [
             {
               id: 1,
-              title: "Member Chat",
+              title: "Member-Chat",
               sel: true,
               messages: [],
             },
             {
               id: 2,
-              title: "YoYo Chat",
+              title: "YoYo-Chat",
               sel: false,
               messages: [],
             },
             {
               id: 3,
-              title: "Tattoo chat",
+              title: "Tattoo-chat",
               sel: false,
               messages: [],
             },
@@ -162,7 +162,7 @@ const DUMMY_DATA = {
             },
             {
               id: 2,
-              title: "Introduce Yourself",
+              title: "Introduce-Yourself",
               sel: true,
               messages: [
                 {
@@ -188,13 +188,13 @@ const DUMMY_DATA = {
             },
             {
               id: 2,
-              title: "YoYo Chat",
+              title: "YoYo-Chat",
               sel: false,
               messages: [],
             },
             {
               id: 3,
-              title: "YoYo Stores",
+              title: "YoYo-Stores",
               sel: false,
               messages: [],
             },
@@ -206,7 +206,7 @@ const DUMMY_DATA = {
     {
       id: 5,
       type: 2,
-      name: "Throw Smoke",
+      name: "THROW SMOKE",
       img: "throwsmoke.png",
       channels: [
         {
@@ -229,7 +229,7 @@ const DUMMY_DATA = {
             },
             {
               id: 2,
-              title: "Introduce Yourself",
+              title: "Introduce-Yourself",
               sel: true,
               messages: [
                 {
@@ -249,19 +249,19 @@ const DUMMY_DATA = {
           subs: [
             {
               id: 1,
-              title: "YoYo Stuff",
+              title: "YoYo-Stuff",
               sel: true,
               messages: [],
             },
             {
               id: 2,
-              title: "Weed Stuff",
+              title: "Weed-Stuff",
               sel: false,
               messages: [],
             },
             {
               id: 3,
-              title: "Rigs & Equipment",
+              title: "Rigs-&-Equipment",
               sel: false,
               messages: [],
             },
