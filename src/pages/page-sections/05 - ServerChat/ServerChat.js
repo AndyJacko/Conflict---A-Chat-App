@@ -1,32 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 
+import PageContext from "../../../store/pageContext";
 import ChatItem from "../../../components/ChatItem/ChatItem";
 import ChatBarIcons from "../../../components/ChatBarIcons/ChatBarIcons";
 import MessageInput from "../../../components/MessageInput/MessageInput";
 import MembersList from "../06 - MembersList/MembersList";
+import ServerProfile from "../../../components/ServerProfile/ServerProfile";
 
 import styles from "./ServerChat.module.css";
 
-const DUMMY_CHATS = [
-  {
-    id: 1,
-    time: "14:02",
-    user: "DarthVader",
-    chat: "You should see my new Tie-Fighter",
-  },
-  { id: 2, time: "14:02", user: "DarthVader", chat: "Its Sick AF" },
-  { id: 3, time: "14:04", user: "AndyJacko", chat: "Sweet..." },
-  { id: 4, time: "14:05", user: "DarthVader", chat: "Got bare weapons too" },
-  { id: 5, time: "14:06", user: "AndyJacko", chat: "Nice..." },
-  {
-    id: 6,
-    time: "14:10",
-    user: "DarthVader",
-    chat: "May destroy a planet later. I will stream it if you want to watch.",
-  },
-];
-
 const ServerChat = () => {
+  const pageCtx = useContext(PageContext);
+
+  const server = pageCtx.data.servers.filter((server) => {
+    return server.id === pageCtx.activeServer;
+  });
+
+  const selChannel = server[0].channels.filter((channel) => {
+    return channel.sel === true;
+  });
+
+  const selSub = selChannel[0].subs.filter((sub) => {
+    return sub.sel === true;
+  });
+
   return (
     <>
       <div className="h-100 d-flex flex-column overflow-hidden">
@@ -35,7 +32,7 @@ const ServerChat = () => {
             <div className={styles.hashicon}>
               <i className="fa-solid fa-hashtag"></i>
             </div>
-            <div className={styles.channelname}>Welcome</div>
+            <div className={styles.channelname}>{selSub[0].title}</div>
           </div>
           <ChatBarIcons />
         </div>
@@ -45,7 +42,9 @@ const ServerChat = () => {
             <div className="h-100 d-flex flex-column overflow-hidden">
               <div className="h-100 overflow-hidden">
                 <div className="h-100 d-flex flex-column justify-content-end">
-                  {DUMMY_CHATS.map((chat) => {
+                  <ServerProfile name={selSub[0].title} />
+
+                  {selSub[0].messages.map((chat) => {
                     return (
                       <ChatItem
                         key={chat.id}
@@ -58,7 +57,7 @@ const ServerChat = () => {
                 </div>
               </div>
 
-              <MessageInput />
+              <MessageInput type="server" />
             </div>
           </div>
 
