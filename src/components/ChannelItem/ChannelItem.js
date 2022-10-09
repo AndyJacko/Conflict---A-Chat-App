@@ -5,7 +5,7 @@ import PageContext from "../../store/pageContext";
 import styles from "./ChannelItem.module.css";
 
 const ChannelItem = ({ channel }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(channel.sel);
   const pageCtx = useContext(PageContext);
 
   const onOpenHandler = () => {

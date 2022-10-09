@@ -11,7 +11,7 @@ const DUMMY_DATA = {
         {
           id: 1,
           title: "Welcome",
-          sel: false,
+          sel: true,
           subs: [
             {
               id: 1,
@@ -21,7 +21,7 @@ const DUMMY_DATA = {
                 {
                   id: 1,
                   time: "14:02",
-                  user: "DarthVader",
+                  user: "Duke",
                   chat: "Welcome to the server, I will post any important stuff here.",
                 },
               ],
@@ -33,9 +33,15 @@ const DUMMY_DATA = {
               messages: [
                 {
                   id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Hi I'm Darth Vader.",
+                  time: "11:06",
+                  user: "Preston",
+                  chat: "Hi I'm Preston, I've got something a little different for you.",
+                },
+                {
+                  id: 2,
+                  time: "13:45",
+                  user: "Dogmeat",
+                  chat: "Woof...Woof...",
                 },
               ],
             },
@@ -44,7 +50,7 @@ const DUMMY_DATA = {
         {
           id: 2,
           title: "Fallout: London",
-          sel: true,
+          sel: false,
           subs: [
             {
               id: 1,
@@ -55,7 +61,7 @@ const DUMMY_DATA = {
             {
               id: 2,
               title: "Known-Bugs",
-              sel: true,
+              sel: false,
               messages: [],
             },
             {
@@ -67,265 +73,88 @@ const DUMMY_DATA = {
           ],
         },
       ],
-      members: [],
+      members: [
+        {
+          id: 1,
+          name: "Duke",
+          img: "fallout/duke.png",
+          status: "online",
+          role: 1,
+        },
+        {
+          id: 2,
+          name: "Foxy Roxy",
+          img: "fallout/roxy.png",
+          status: "idle",
+          role: 4,
+        },
+        {
+          id: 3,
+          name: "Preston Garvey",
+          img: "fallout/preston.png",
+          status: "dnd",
+          role: 3,
+        },
+        {
+          id: 4,
+          name: "Ann Codman",
+          img: "fallout/anncodman.png",
+          status: "offline",
+          role: 5,
+        },
+        {
+          id: 5,
+          name: "Travis Miles",
+          img: "fallout/travismiles.png",
+          status: "offline",
+          role: 5,
+        },
+        {
+          id: 6,
+          name: "Bobbi No-Nose",
+          img: "fallout/bobbinonose.png",
+          status: "offline",
+          role: 5,
+        },
+        {
+          id: 7,
+          name: "Wayne Delancy",
+          img: "fallout/waynedelancy.png",
+          status: "offline",
+          role: 5,
+        },
+        {
+          id: 8,
+          name: "Codsworth",
+          img: "fallout/codsworth.png",
+          status: "idle",
+          role: 4,
+        },
+        {
+          id: 9,
+          name: "Dogmeat",
+          img: "fallout/dogmeat.png",
+          status: "online",
+          role: 4,
+        },
+        {
+          id: 10,
+          name: "Kasumi Nakago",
+          img: "fallout/kasuminakago.png",
+          status: "idle",
+          role: 2,
+        },
+      ],
+      roles: [
+        { id: 1, title: "head of department" },
+        { id: 2, title: "public relations" },
+        { id: 3, title: "3d artist" },
+        { id: 4, title: "online" },
+        { id: 5, title: "offline" },
+      ],
     },
     {
       id: 3,
-      type: 2,
-      name: "DitchDown 44",
-      img: "dd44.png",
-      channels: [
-        {
-          id: 1,
-          title: "Welcome",
-          sel: false,
-          subs: [
-            {
-              id: 1,
-              title: "Announcements",
-              sel: false,
-              messages: [
-                {
-                  id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Welcome to the server, I will post any important stuff here.",
-                },
-              ],
-            },
-            {
-              id: 2,
-              title: "Introduce-Yourself",
-              sel: true,
-              messages: [
-                {
-                  id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Hi I'm Darth Vader.",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: "DitchDown 44",
-          sel: true,
-          subs: [
-            {
-              id: 1,
-              title: "Member-Chat",
-              sel: true,
-              messages: [],
-            },
-            {
-              id: 2,
-              title: "YoYo-Chat",
-              sel: false,
-              messages: [],
-            },
-            {
-              id: 3,
-              title: "Tattoo-chat",
-              sel: false,
-              messages: [],
-            },
-          ],
-        },
-      ],
-      members: [],
-    },
-    {
-      id: 4,
-      type: 2,
-      name: "UK Throwers",
-      img: "ukthrowers.png",
-      channels: [
-        {
-          id: 1,
-          title: "Welcome",
-          sel: false,
-          subs: [
-            {
-              id: 1,
-              title: "Announcements",
-              sel: false,
-              messages: [
-                {
-                  id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Welcome to the server, I will post any important stuff here.",
-                },
-              ],
-            },
-            {
-              id: 2,
-              title: "Introduce-Yourself",
-              sel: true,
-              messages: [
-                {
-                  id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Hi I'm Darth Vader.",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: "UK Throwers",
-          sel: true,
-          subs: [
-            {
-              id: 1,
-              title: "BST",
-              sel: true,
-              messages: [],
-            },
-            {
-              id: 2,
-              title: "YoYo-Chat",
-              sel: false,
-              messages: [],
-            },
-            {
-              id: 3,
-              title: "YoYo-Stores",
-              sel: false,
-              messages: [],
-            },
-          ],
-        },
-      ],
-      members: [],
-    },
-    {
-      id: 5,
-      type: 2,
-      name: "THROW SMOKE",
-      img: "throwsmoke.png",
-      channels: [
-        {
-          id: 1,
-          title: "Welcome",
-          sel: false,
-          subs: [
-            {
-              id: 1,
-              title: "Announcements",
-              sel: false,
-              messages: [
-                {
-                  id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Welcome to the server, I will post any important stuff here.",
-                },
-              ],
-            },
-            {
-              id: 2,
-              title: "Introduce-Yourself",
-              sel: true,
-              messages: [
-                {
-                  id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Hi I'm Darth Vader.",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: "Throw Smoke",
-          sel: true,
-          subs: [
-            {
-              id: 1,
-              title: "YoYo-Stuff",
-              sel: true,
-              messages: [],
-            },
-            {
-              id: 2,
-              title: "Weed-Stuff",
-              sel: false,
-              messages: [],
-            },
-            {
-              id: 3,
-              title: "Rigs-&-Equipment",
-              sel: false,
-              messages: [],
-            },
-          ],
-        },
-      ],
-      members: [],
-    },
-    {
-      id: 6,
-      type: 2,
-      name: "CN Master 41",
-      img: "cn41.png",
-      channels: [
-        {
-          id: 1,
-          title: "Welcome",
-          sel: true,
-          subs: [
-            {
-              id: 1,
-              title: "welcome-to-code-nation",
-              sel: true,
-              messages: [
-                {
-                  id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Welcome to the server, I will post any important stuff here.",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: "Resources",
-          sel: false,
-          subs: [
-            {
-              id: 1,
-              title: "class-schedule",
-              sel: true,
-              messages: [],
-            },
-            {
-              id: 2,
-              title: "lecture-resources",
-              sel: false,
-              messages: [],
-            },
-            {
-              id: 3,
-              title: "work-submission",
-              sel: false,
-              messages: [],
-            },
-          ],
-        },
-      ],
-      members: [],
-    },
-    {
-      id: 7,
       type: 2,
       name: "Session: Skate Sim",
       img: "session.png",
@@ -342,9 +171,9 @@ const DUMMY_DATA = {
               messages: [
                 {
                   id: 1,
-                  time: "14:02",
-                  user: "DarthVader",
-                  chat: "Welcome to the server, I will post any important stuff here.",
+                  time: "23:59",
+                  user: "Donovan Strain",
+                  chat: "Welcome skaters. Don't waste time online. GO SKATE!",
                 },
               ],
             },
@@ -357,8 +186,8 @@ const DUMMY_DATA = {
           subs: [
             {
               id: 1,
-              title: "chat",
-              sel: true,
+              title: "skate-chat",
+              sel: false,
               messages: [],
             },
             {
@@ -376,7 +205,282 @@ const DUMMY_DATA = {
           ],
         },
       ],
-      members: [],
+      members: [
+        {
+          id: 1,
+          name: "Billy Marks",
+          img: "session/billymarks.png",
+          status: "online",
+          role: 2,
+        },
+        {
+          id: 2,
+          name: "Daewon Song",
+          img: "session/daewonsong.png",
+          status: "dnd",
+          role: 3,
+        },
+        {
+          id: 3,
+          name: "Dane Burman",
+          img: "session/daneburman.png",
+          status: "idle",
+          role: 3,
+        },
+        {
+          id: 4,
+          name: "Donovan Strain",
+          img: "session/donovanstrain.png",
+          status: "idle",
+          role: 1,
+        },
+        {
+          id: 5,
+          name: "Annie Guglia",
+          img: "session/annieguglia.png",
+          status: "offline",
+          role: 4,
+        },
+        {
+          id: 6,
+          name: "AntiFerg",
+          img: "session/antiferg.png",
+          status: "offline",
+          role: 4,
+        },
+        {
+          id: 7,
+          name: "Ribsman",
+          img: "session/ribsman.png",
+          status: "offline",
+          role: 4,
+        },
+      ],
+      roles: [
+        { id: 1, title: "admin" },
+        { id: 2, title: "regular" },
+        { id: 3, title: "goofy" },
+        { id: 4, title: "offline" },
+      ],
+    },
+    {
+      id: 4,
+      type: 2,
+      name: "Half-Life",
+      img: "halflife.png",
+      channels: [
+        {
+          id: 1,
+          title: "Server Info",
+          sel: true,
+          subs: [
+            {
+              id: 1,
+              title: "welcome",
+              sel: true,
+              messages: [
+                {
+                  id: 1,
+                  time: "12:00",
+                  user: "G Man",
+                  chat: "We've been rather busy in your absence, Mister Freeman.",
+                },
+                {
+                  id: 2,
+                  time: "12:05",
+                  user: "Gordon Freeman",
+                  chat: "My hazard suit itches.",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: 2,
+          title: "Half-Life",
+          sel: false,
+          subs: [
+            {
+              id: 1,
+              title: "chat",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "clips-and-pics",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "bug reports",
+              sel: false,
+              messages: [],
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Half-Life 2",
+          sel: false,
+          subs: [
+            {
+              id: 1,
+              title: "chat",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "clips-and-pics",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "bug reports",
+              sel: false,
+              messages: [],
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "Half-Life 2: EP1",
+          sel: false,
+          subs: [
+            {
+              id: 1,
+              title: "chat",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "clips-and-pics",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "bug reports",
+              sel: false,
+              messages: [],
+            },
+          ],
+        },
+        {
+          id: 5,
+          title: "Half-Life 2: EP2",
+          sel: false,
+          subs: [
+            {
+              id: 1,
+              title: "chat",
+              sel: true,
+              messages: [],
+            },
+            {
+              id: 2,
+              title: "clips-and-pics",
+              sel: false,
+              messages: [],
+            },
+            {
+              id: 3,
+              title: "bug reports",
+              sel: false,
+              messages: [],
+            },
+          ],
+        },
+      ],
+      members: [
+        {
+          id: 1,
+          name: "G Man",
+          img: "halflife/gman.png",
+          status: "dnd",
+          role: 1,
+        },
+        {
+          id: 2,
+          name: "Gordon Freeman",
+          img: "halflife/gman.png",
+          status: "online",
+          role: 2,
+        },
+        {
+          id: 3,
+          name: "Barney Calhoun",
+          img: "halflife/barney.png",
+          status: "idle",
+          role: 2,
+        },
+        {
+          id: 4,
+          name: "Eli Vance",
+          img: "halflife/elivance.png",
+          status: "online",
+          role: 2,
+        },
+        {
+          id: 5,
+          name: "Combine Soldier",
+          img: "halflife/combinesoldier.png",
+          status: "online",
+          role: 3,
+        },
+        {
+          id: 6,
+          name: "Combine Grunt",
+          img: "halflife/combinegrunt.png",
+          status: "idle",
+          role: 3,
+        },
+        {
+          id: 7,
+          name: "Alyx Vance",
+          img: "halflife/alyxvance.png",
+          status: "offline",
+          role: 4,
+        },
+        {
+          id: 8,
+          name: "Isaac Kleiner",
+          img: "halflife/isaackleiner.png",
+          status: "offline",
+          role: 4,
+        },
+        {
+          id: 9,
+          name: "Wallace Breen",
+          img: "halflife/wallacebreen.png",
+          status: "offline",
+          role: 4,
+        },
+        {
+          id: 10,
+          name: "Judith Mossman",
+          img: "halflife/judithmossman.png",
+          status: "offline",
+          role: 4,
+        },
+        {
+          id: 11,
+          name: "Father Grigori",
+          img: "halflife/fathergrigori.png",
+          status: "offline",
+          role: 4,
+        },
+      ],
+      roles: [
+        { id: 1, title: "admin" },
+        { id: 2, title: "black mesa" },
+        { id: 3, title: "combine" },
+        { id: 4, title: "offline" },
+      ],
     },
   ],
   friends: [
