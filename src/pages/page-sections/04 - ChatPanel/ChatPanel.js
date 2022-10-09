@@ -29,8 +29,8 @@ const ChatPanel = () => {
         </div>
 
         <div className="h-100 d-flex flex-column overflow-hidden">
-          <div className="h-100 overflow-hidden">
-            <div className="h-100 d-flex flex-column justify-content-end">
+          <div className="h-100 overflow-hidden position-relative">
+            <div id="chatbox" className={`${styles.chatbox}`}>
               <FriendProfile name={friend[0].name} img={friend[0].img} />
 
               {friend[0].messages.map((chat) => {

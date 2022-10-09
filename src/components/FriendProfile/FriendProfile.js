@@ -14,7 +14,10 @@ const FriendProfile = ({ img, name }) => {
       </div>
       <div className={styles.server}>
         <div>
-          <img src="/images/servericons/cn41.png" alt="Mutual Server Icon" />
+          <img
+            src="/images/servericons/halflife.png"
+            alt="Mutual Server Icon"
+          />
         </div>
         <div className={styles.mutual}>1 Mutual Server</div>
         <div className={`${styles.button} ${styles.addfriend}`}>Add Friend</div>

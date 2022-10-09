@@ -40,8 +40,8 @@ const ServerChat = () => {
         <div className="h-100 d-flex">
           <div className="h-100 w-100">
             <div className="h-100 d-flex flex-column overflow-hidden">
-              <div className="h-100 overflow-hidden">
-                <div className="h-100 d-flex flex-column justify-content-end">
+              <div className="h-100 overflow-hidden position-relative">
+                <div id="chatbox" className={`${styles.chatbox}`}>
                   <ServerProfile name={selSub[0].title} />
 
                   {selSub[0].messages.map((chat) => {

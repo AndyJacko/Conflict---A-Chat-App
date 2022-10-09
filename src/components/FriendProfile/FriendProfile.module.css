@@ -57,10 +57,22 @@
   background: var(--btnbgblue);
 }
 
+.addfriend:hover {
+  background: var(--btnbgblueH);
+}
+
 .block {
   background: var(--btnbggray);
 }
 
+.block:hover {
+  background: var(--btnbggrayH);
+}
+
 .spam {
   background: var(--btnbgred);
+}
+
+.spam:hover {
+  background: var(--btnbgredH);
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const DUMMY_DATA = {
   servers: [
@@ -41,7 +41,7 @@ const DUMMY_DATA = {
                   id: 2,
                   time: "13:45",
                   user: "Dogmeat",
-                  chat: "Woof...Woof...",
+                  chat: "Woof...",
                 },
               ],
             },
@@ -631,6 +631,13 @@ export const PageContextProvider = ({ children }) => {
   const [activePageType, setActivePageType] = useState(1);
   const [activeServer, setActiveServer] = useState(1);
   const [data, setData] = useState(DUMMY_DATA);
+
+  useEffect(() => {
+    if (document.getElementById("chatbox")) {
+      const chatbox = document.getElementById("chatbox");
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+  }, [data]);
 
   const onPageChange = (id, type) => {
     if (id && type) {
