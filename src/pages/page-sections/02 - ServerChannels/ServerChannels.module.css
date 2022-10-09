@@ -1,6 +1,7 @@
 .serverheader {
   padding: 10px 20px 14px 16px;
   color: var(--white);
+  font-weight: bold;
   border-bottom: 1px solid var(--background);
   cursor: pointer;
 }
