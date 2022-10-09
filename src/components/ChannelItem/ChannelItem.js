@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+
+import PageContext from "../../store/pageContext";
 
 import styles from "./ChannelItem.module.css";
 
 const ChannelItem = ({ channel }) => {
   const [open, setOpen] = useState(false);
+  const pageCtx = useContext(PageContext);
 
   const onOpenHandler = () => {
     setOpen(!open);
   };
 
+  const onChannelChange = (e) => {
+    pageCtx.onChannelChange(channel.id, +e.target.parentElement.id);
+  };
+
   return (
-    <div className={`w-100 d-flex align-items-center ${styles.channelitem}`}>
+    <div className={`d-flex align-items-center ${styles.channelitem}`}>
       {!open && (
         <div className={styles.channel} onClick={onOpenHandler}>
           <i className="fa-solid fa-angle-right"></i>
@@ -27,7 +34,14 @@ const ChannelItem = ({ channel }) => {
           <div className={styles.list}>
             {channel.subs.map((sub) => {
               return (
-                <div className={styles.sub} key={sub.id}>
+                <div
+                  id={sub.id}
+                  className={`${styles.sub} ${
+                    sub.sel && channel.sel ? styles.selected : null
+                  }`}
+                  key={sub.id}
+                  onClick={onChannelChange}
+                >
                   <div>
                     <i className="fa-solid fa-hashtag"></i>
                   </div>

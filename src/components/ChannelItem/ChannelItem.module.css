@@ -1,5 +1,4 @@
 .channelitem {
-  width: 100%;
   padding: 14px 6px;
 }
 
@@ -28,18 +27,29 @@
 }
 
 .sub {
+  padding: 4px 8px 4px 8px;
+  margin: 2px 0;
+  line-height: 20px;
   display: flex;
   align-items: center;
   font-size: 14px;
+  text-transform: lowercase;
   cursor: pointer;
-  border: 1px solid white;
 }
 
 .sub:hover {
+  color: var(--white);
+  border-radius: 3px;
   background: var(--selectedbg);
 }
 
 .sub i {
   margin-right: 20px;
   font-size: 20px;
+}
+
+.selected {
+  color: var(--white);
+  background: var(--selectedbg);
+  z-index: 200;
 }

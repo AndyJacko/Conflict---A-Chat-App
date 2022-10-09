@@ -16,4 +16,5 @@
   min-width: 125px;
   color: var(--white);
   font-weight: bold;
+  text-transform: lowercase;
 }

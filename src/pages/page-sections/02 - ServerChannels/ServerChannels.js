@@ -30,7 +30,7 @@ const ServerChannels = () => {
         </div>
 
         {server[0] && (
-          <div className="w-100">
+          <div>
             {server[0].channels.map((channel) => {
               return <ChannelItem key={channel.id} channel={channel} />;
             })}
